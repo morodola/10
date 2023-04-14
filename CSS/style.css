@@ -1,39 +1,38 @@
-*{
+* {
   box-sizing: border-box;
 }
 @font-face {
-    font-family: 'Museo Cyrl 900';
-    src: url('../fonts/MuseoCyrl-900.woff') format('woff2'),
-        url('../fonts/MuseoCyrl-900.woff2') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Museo Cyrl 900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff2"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-body{
- font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   color: #202020;
 }
 .header {
   padding: 22px 0;
   background-color: rgb(241, 241, 241);
-  
 }
-.header-container{
+.header-container {
   max-width: 1140px;
-  margin:auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.nav-link{
+.nav-link {
   margin-left: 11px;
   margin-right: 11px;
   text-decoration: none;
   font-size: 14px;
   font-family: "Tahoma";
   color: rgb(32, 32, 32);
-  }
-.logo{
+}
+.logo {
   font-size: 14px;
   font-family: "Tahoma";
   color: rgb(32, 32, 32);
@@ -41,7 +40,7 @@ body{
   text-decoration: none;
   text-transform: uppercase;
 }
-.login{
+.login {
   margin-left: 11px;
   margin-right: 11px;
   text-decoration: none;
@@ -50,92 +49,171 @@ body{
   color: rgb(32, 32, 32);
 }
 /* главная секция */
-.hero{
+.hero {
   padding-top: 62px;
   padding-bottom: 71px;
 }
-.hero-container{
+.hero-container {
   max-width: 1140px;
-  margin:auto;
+  margin: auto;
   display: flex;
   align-items: center;
-
 }
-.hero-image{
+.hero-image {
   margin-right: 122px;
 }
-.author{
+.author {
   display: block;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 22px;
-  }
+}
 
-.title{
+.title {
   font-family: "Museo Cyrl 900";
   font-size: 54px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 15px;
 }
-.subtitle{
+.subtitle {
   display: block;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
   margin-bottom: 48px;
 }
-.info{
-  
+.info {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 49px;
   gap: 16px 0;
-  
 }
-.info-text{
+.info-text {
   flex-basis: 45%;
   font-size: 16px;
   font-weight: 400;
-  
 }
-.price{
+.price {
   display: flex;
   align-items: center;
   margin-bottom: 48px;
 }
-.pricetag{
+.pricetag {
   margin-right: 64px;
   font-weight: 400;
   font-size: 55px;
 }
-.favorites{
+.favorites {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   color: inherit;
 }
-.buttons{
+.buttons {
   display: flex;
   gap: 20px;
 }
-.button{
+.button {
   font-size: 16px;
   font-weight: 700;
   padding: 22px 50px;
   border-radius: 5px;
   border: 2px solid transparent;
-  
-  }
-.button-primary{
+}
+.button-primary {
   color: #ffffff;
   background-color: rgb(248, 156, 2);
- 
+
   cursor: pointer;
 }
-.button-outline{
+.button-outline {
   color: rgb(248, 156, 2);
   text-decoration: none;
   border: 2px solid rgb(248, 156, 2);
   border-radius: 5px;
-  }
+}
+/* О книге */
+.about {
+  background-color: rgb(241, 241, 241);
+  padding: 99px 0;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.about-book {
+  max-width: 424px;
+  flex-shrink: 0;
+}
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about-author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 552px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background-color: #ffffff;
+  padding: 68px 53px;
+}
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 21px;
+}
+.author-name {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.author-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+.author-text {
+  margin-top: 24px;
+  flex-basis: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.readers {
+  background-color: #ffffff;
+}
+.readers-container {
+  padding-top: 99px;
+  padding-bottom: 110px;
+  max-width: 1140px;
+  margin: auto;
+}
+.readers-foto {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.text-under {
+  margin-bottom: 55px;
+  font-size: 32px;
+  color: inherit;
+  font-weight: bold;
+}
+.readers-foto-img {
+  margin-left: 0;
+  margin-bottom: 30px;
+  width: 165px;
+  height: 165px;
+}

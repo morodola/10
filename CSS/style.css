@@ -1,8 +1,17 @@
 *{
   box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Museo Cyrl 900';
+    src: url('../fonts/MuseoCyrl-900.woff') format('woff2'),
+        url('../fonts/MuseoCyrl-900.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
-  font-family: sans-serif;
+ font-family: 'Roboto', sans-serif;
   color: #202020;
 }
 .header {
@@ -11,7 +20,6 @@ body{
   
 }
 .header-container{
-  border: 1px solid red;
   max-width: 1140px;
   margin:auto;
   display: flex;
@@ -64,6 +72,7 @@ body{
   }
 
 .title{
+  font-family: "Museo Cyrl 900";
   font-size: 54px;
   font-weight: 700;
   margin-top: 0;
@@ -81,13 +90,14 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 49px;
+  gap: 16px 0;
   
 }
 .info-text{
   flex-basis: 45%;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 16px;
+  
 }
 .price{
   display: flex;
@@ -105,17 +115,23 @@ body{
   text-decoration: none;
   color: inherit;
 }
+.buttons{
+  display: flex;
+  gap: 20px;
+}
 .button{
   font-size: 16px;
   font-weight: 700;
   padding: 22px 50px;
   border-radius: 5px;
   border: 2px solid transparent;
+  
   }
 .button-primary{
   color: #ffffff;
   background-color: rgb(248, 156, 2);
-  margin-right: 20px;
+ 
+  cursor: pointer;
 }
 .button-outline{
   color: rgb(248, 156, 2);

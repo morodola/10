@@ -14,6 +14,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #202020;
 }
+img {
+  max-width: 100%;
+}
 .header {
   width: 100%;
   top: 0;
@@ -52,6 +55,10 @@ body {
   font-size: 14px;
   font-family: "Tahoma";
   color: rgb(32, 32, 32);
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 /* главная секция */
 .hero {
@@ -279,4 +286,246 @@ body {
   border: 1px solid #eeeeee;
   background-color: #ffffff;
   padding: 18px;
+}
+@media (max-width: 1200px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 960px;
+  }
+  .image-block {
+    min-width: 390px;
+    max-width: 390px;
+    margin-right: 30px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  .readers-container {
+    padding-top: 99px;
+    padding-bottom: 94px;
+  }
+  .readers-foto-img {
+    width: 139px;
+    height: 139px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  .image-block {
+    min-width: 300px;
+    max-width: 300px;
+    margin-right: 30px;
+  }
+  .author {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .info {
+    margin-bottom: 39px;
+  }
+  .info-text {
+    font-size: 16px;
+  }
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .button {
+    padding: 20px 40px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    max-width: 100%;
+    margin-bottom: 62px;
+  }
+  .img-11,
+  .img-12 {
+    display: none;
+  }
+  .requisites,
+  .information {
+    margin-right: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 560px;
+  }
+  .hero {
+    padding-top: 40px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .image-block {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+  .img-9,
+  .img-10 {
+    display: none;
+  }
+  .requisites,
+  .information {
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    width: 95%;
+  }
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+  .info-text {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .button-primary {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about-book {
+    margin-bottom: 70px;
+  }
+  .about-author {
+    padding: 54px 44px;
+  }
+  .author-text {
+    font-size: 14px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .requisites,
+  .information,
+  .contacts {
+    flex-basis: 100%;
+    margin-bottom: 36px;
+    margin-right: 0;
+  }
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+  .favorites-text {
+    display: none;
+  }
+  .img-7,
+  .img-8 {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    width: 95%;
+  }
+  .image-block {
+    min-width: 100%;
+    margin-bottom: 43px;
+  }
+  .author {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .info {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+  .price {
+    margin-bottom: 36px;
+  }
+  .button {
+    flex-basis: 100%;
+  }
+  .section-title {
+    margin-bottom: 36px;
+  }
+  .about-book {
+    margin-bottom: 31px;
+  }
+  .about-author {
+    margin-bottom: 64px;
+
+    padding-bottom: 34px;
+  }
 }

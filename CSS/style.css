@@ -489,7 +489,14 @@ img {
   .about-container,
   .readers-container,
   .footer-container {
-    width: 95%;
+    width: 82.5%;
+  }
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .sale-label {
+    display: none;
   }
   .image-block {
     min-width: 100%;
@@ -497,7 +504,68 @@ img {
   }
   .author {
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .info {
+    margin-bottom: 0;
+  }
+  .date,
+  .format,
+  .type {
+    font-size: 14px;
+    gap: 18px;
+    margin-bottom: 0;
+  }
+  .age {
+    padding-bottom: 0;
+    margin-bottom: 36px;
+  }
+  .pricetag {
+    margin-right: 29px;
+    font-size: 55px;
+    line-height: 0.655;
+  }
+  .buttons {
+    gap: 16px;
+  }
+  .button-primary {
+    margin-bottom: 0;
+  }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 54px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .about-text {
+    margin-top: 0;
+    font-size: 15px;
+  }
+
+  .author-name {
+    font-size: 16px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .author-link {
+    font-size: 14px;
+  }
+  .author-text {
+    font-size: 16px;
   }
   .title {
     font-size: 24px;
@@ -507,13 +575,7 @@ img {
     font-size: 18px;
     margin-bottom: 24px;
   }
-  .info {
-    font-size: 14px;
-    margin-bottom: 17px;
-  }
-  .price {
-    margin-bottom: 36px;
-  }
+
   .button {
     flex-basis: 100%;
   }
@@ -524,8 +586,30 @@ img {
     margin-bottom: 31px;
   }
   .about-author {
-    margin-bottom: 64px;
-
-    padding-bottom: 34px;
+    width: 265px;
+    padding-left: 21px;
+  }
+  .readers-container {
+    padding-top: 0px;
+    padding-bottom: 46px;
+  }
+  .text-under-readers {
+    margin-top: 60px;
+    margin-bottom: 36px;
+  }
+  .img-6,
+  .img-5 {
+    display: none;
+  }
+  .readers-foto-img {
+    width: 124px;
+    height: 124px;
+    margin-bottom: 14px;
+  }
+  .requisites {
+    margin-bottom: 20px;
+  }
+  .information {
+    margin-bottom: 20px;
   }
 }
